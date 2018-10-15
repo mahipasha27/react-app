@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Input from './components/input-component/index'
 
 class App extends Component {
   render() {
@@ -9,7 +10,9 @@ class App extends Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
-            Edit <code>src/App.js</code> and save to reload.
+           chenna kesava App
+           <Header></Header>
+           <Input/>
           </p>
           <a
             className="App-link"
@@ -22,6 +25,14 @@ class App extends Component {
         </header>
       </div>
     );
+  }
+}
+
+class Header extends Component{
+  render(){
+    return(
+      <h1>First Component</h1>
+    )
   }
 }
 
